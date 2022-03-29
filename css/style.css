@@ -1,0 +1,218 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: hsl(229, 57%, 11%);
+  margin: 0;
+}
+/* @media (max-width: 376px) {
+  body {
+    background-image: url("../images/bg-mobile.png");
+    background-size: cover;
+  }
+} */
+.container {
+  width: 880px;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  align-items: flex-end;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+@media (max-width: 400px) {
+  .container {
+    width: fit-content;
+    flex-direction: column;
+  }
+}
+.container > div {
+  background-color: hsl(228, 56%, 26%);
+  padding: 40px;
+}
+.container .fylo {
+  width: 335px;
+  border-radius: 10px 90px 10px 10px;
+  -webkit-border-radius: 10px 90px 10px 10px;
+  -moz-border-radius: 10px 90px 10px 10px;
+  -ms-border-radius: 10px 90px 10px 10px;
+  -o-border-radius: 10px 90px 10px 10px;
+}
+@media (max-width: 400px) {
+  .container .fylo {
+    margin-bottom: 20px;
+  }
+}
+.container .fylo img.logo {
+  margin-bottom: 30px;
+}
+.container .fylo .icons {
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+}
+.container .fylo .icons .bg-img {
+  border-radius: 10px;
+  background-color: hsl(229, 57%, 11%);
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .fylo .icons .bg-img:not(:first-child) {
+  margin-left: 15px;
+}
+.container .prog {
+  width: 520px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  padding-bottom: 60px;
+}
+@media (max-width: 400px) {
+  .container .prog {
+    width: 335px;
+  }
+}
+.container .prog p {
+  color: hsl(243deg 100% 93% / 90%);
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+@media (max-width: 400px) {
+  .container .prog p {
+    text-align: center;
+  }
+}
+.container .prog p span {
+  color: hsl(243deg 100% 93% / 100%);
+  font-weight: 700;
+}
+.container .prog .progress {
+  position: relative;
+  background-color: hsl(229, 57%, 11%);
+  height: 18px;
+  border-radius: 10px;
+  padding: 2px;
+}
+.container .prog .progress .line {
+  width: 76.5%;
+  height: 100%;
+  background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  border-radius: 10px;
+  position: relative;
+}
+.container .prog .progress .line::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  right: 2px;
+  top: 2px;
+  background-color: hsl(243, 100%, 93%);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.container .prog .progress .number {
+  position: absolute;
+  right: 0;
+  top: -115px;
+  background-color: white;
+  padding: 13px 25px;
+  border-radius: 10px 10px 0;
+  font-size: 12px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  color: hsl(229, 7%, 55%);
+  -webkit-border-radius: 10px 10px 0;
+  -moz-border-radius: 10px 10px 0;
+  -ms-border-radius: 10px 10px 0;
+  -o-border-radius: 10px 10px 0;
+}
+@media (max-width: 400px) {
+  .container .prog .progress .number {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    position: relative;
+    width: 164.46px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 33px;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+  }
+}
+.container .prog .progress .number::before {
+  content: "";
+  border: 10px solid;
+  border-color: white white transparent transparent;
+  background-color: white;
+  position: absolute;
+  right: 0;
+  background-color: transparent;
+  bottom: -19px;
+}
+@media (max-width: 400px) {
+  .container .prog .progress .number::before {
+    display: none;
+  }
+}
+.container .prog .progress .number span {
+  font-weight: 700;
+  color: hsl(229, 57%, 11%);
+  font-size: 34px;
+  margin-right: 10px;
+}
+.container .prog .progress p.gb0 {
+  position: absolute;
+  left: 0;
+  bottom: -45px;
+  color: hsl(243deg 100% 93% / 90%);
+  font-size: 14px;
+  font-weight: 700;
+}
+.container .prog .progress p.gb1000 {
+  position: absolute;
+  right: 0;
+  bottom: -45px;
+  color: hsl(243deg 100% 93% / 90%);
+  font-size: 14px;
+  font-weight: 700;
+}
+.underground {
+  background-image: url(../images/bg-desktop.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+  position: relative;
+  top: 50vh;
+  z-index: -1;
+}
+@media (max-width: 400px) {
+  .underground {
+    background-image: url(../images/bg-mobile.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    top: 0;
+  }
+}
